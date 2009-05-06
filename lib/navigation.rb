@@ -1,38 +1,3 @@
-# Usage: 
-
-# include Navigation # in ApplicationHelper.rb (or wherever you like)
-# <%= navigation %> # in View
-# {:id => 'html_id'} is the only option so far.
-
-
-# navigation.yml
-
-# - - dashboard
-#   - - admin_path
-#     - admin_dashboard_path
-#     
-# - - content
-#   - - - articles
-#       - - admin_articles_path
-#   
-# - - advertising
-#   - - - advertisements
-#       - - admin_ads_path
-#         - admin_banner_ads_path
-#         - admin_text_ads_path
-#     - - advertisers
-#       - - admin_advertisers_path
-# 
-# - - people
-#   - - - subscribers
-#       - - admin_people_path
-#     - - users
-#       - - admin_users_path
-
-
-# The first path is what the section links to - the others are just recognized.
-# In this case Advertising > Advertisements will be highlighted if you're on ads_path, banner_ads_path, or text_ads_path, but links to ads_path
-
 module Navigation
   
   module ViewHelper
